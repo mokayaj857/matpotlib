@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+# Define 'views' as a list of data points
+views = [100, 200, 400, 599,544,345,345]
+time =range(1,8)
+
+# Plot the views
+plt.plot(views,time,label='youtube views',color='indigo', marker='o',linestyle='dashdot',linewidth=1)
+plt.xlabel('time')
+plt.ylabel('Views')
+
+plt.legend()
+plt.show()
