@@ -8,4 +8,4 @@ plt.plot(age,year,label='my_age',linestyle='dashdot')
 plt.plot(number,year,label='my_number')
 plt.legend()
 plt.title('my biography')
-plt.show().
+plt.show()
