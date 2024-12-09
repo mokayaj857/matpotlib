@@ -1,0 +1,23 @@
+# Function to calculate the accumulated amount and compound interest
+def calculate_compound_interest(P, r, n, t):
+    # Calculate accumulated amount
+    A = P * (1 + r / n) ** (n * t)
+    
+    # Calculate compound interest
+    CI = A - P
+    
+    # Return both accumulated amount and compound interest
+    return A, CI
+
+# Given values
+P = 150000  # Principal amount in Ksh
+r = 0.043   # Annual interest rate (4.3%)
+n = 4       # Compounding quarterly
+t = 6       # Time in years
+
+# Calculate the accumulated amount and compound interest
+A, CI = calculate_compound_interest(P, r, n, t)
+
+# Display the results
+print(f"The total accumulated amount after {t} years is: Ksh {A:.2f}")
+print(f"The total compound interest after {t} years is: Ksh {CI:.2f}")
